@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Ubuntu:wght@300&display=swap');
+
+*{box-sizing: border-box; padding: 0; margin: 0;}
+html{scroll-behavior: smooth;}
+body{width: 100%;height: 100%; }
+
+/*formatações do header*/
+header nav{ position: fixed; top: 0; width: 100% ; height: 120px; padding: 10px 90px; background-color: rgba(0, 0, 0, 0.6); border-bottom: 1px solid #fff; padding-bottom: 20px; -webkit-box-shadow: 1px 14px 69px -11px rgba(0,0,0,0.53);
+    -moz-box-shadow: 1px 14px 69px -11px rgba(0,0,0,0.53);
+    box-shadow: 1px 14px 69px -11px rgba(0,0,0,0.53); border: none;} 
+
+    /*formatação do background */
+    header #image-bg{ width:100%; position: absolute; top: 0; border-color: #23CFBE; border-width: 10px;}
+    header #image-bg img{height: 95vh; width: 100%; filter: blur(10px); }
+
+  /*formatando logo*/
+nav #logo{display: flex;; height: 100px; float: left; position: absolute;} 
+#logo img{width:100px; height: 100px; padding: 10px;}
+#logo img{  transition: all 0.5s;  cursor: pointer;}
+#logo img:hover{-webkit-transform: scale(1.5); transform: scale(1.2);}
+
+
+/*Formação das listas de navegação do header*/
+nav ul{ list-style: none; float: right; margin: 0; padding: 10px; display: flex; color: azure; letter-spacing: 2px;}
+nav ul li a{ text-decoration: none; line-height: 80px; color: inherit; padding: 12px 30px; font-weight: 800; text-transform: uppercase; font-family: 'Amatic SC', cursive; font-size: 25px;}
+nav ul img{width: 90px; margin-right: 10px; margin-bottom: 20px; }
+nav ul li a:hover{background-color:rgba(0, 0, 0, 0.6); border-radius: 6px;}
+
+/*Section Sobre*/
+
+
+#Sobre{  background-repeat: no-repeat;
+    height: 95vh; }
+/*formando texto h1 e paragrafo*/
+#Sobre p{font-size: 35px; color: white;font-family: 'Amatic SC', cursive; font-weight: 700; text-align: left;}
+#logo h1{font-size: 3em; position: relative; top: 30px;font-family: 'Amatic SC', cursive; color: white; margin-left:10px; }
+#Sobre h1{font-size: 100px; color: #66FFDB; text-shadow: 3px 3px 4px rgba(133, 163, 160, 1); margin: 30px; font-family: 'Amatic SC', cursive;}
+#Sobre h1{font-family: 'Amatic SC';  transition: all 0.5s;  cursor: pointer;}
+#Sobre h1:hover{
+   color: #6AC1CF;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    }
+    #Sobre p:hover{transition: all 1.0s; font: size 35px; -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+      filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));}
+
+
+    /*configurando conteúdos do Sobre*/
+    #content{position: relative; top: 400px; display: flex;
+       justify-content: center;  align-content: center; background-color: rgba(0, 0, 0, 0.6); height: 20vw; -webkit-box-shadow: -1px 5px 15px 5px #000000; 
+       box-shadow: -1px 5px 15px 5px #000000; align-items: center; justify-items: center;}
+    #content #old{display: flex; margin: 40px;
+      -webkit-box-shadow: -1px 5px 15px -1px rgba(0,0,0,0.93); 
+      box-shadow: -1px 5px 15px -1px rgba(0,0,0,0.93);}
+      #content #old:hover{transition: all 2s; -webkit-transform: scale(5.2s); transform: scale(1.1);}
+    #content #new{display: none; margin: 60px;}
+    #content #new{-webkit-box-shadow: -1px 5px 15px -1px rgba(0,0,0,0.93); 
+      box-shadow: -1px 5px 15px -1px rgba(0,0,0,0.93); padding: 10px; }
+      #content #new:hover{transition: all 2s; -webkit-transform: scale(5.2s); transform: scale(1.1); color: #6AC1CF;}
+      #content #new p:hover{ cursor: pointer;}
+
+   /*formatando imagens*/
+   #content #ext{ width: 180px; }
+   #content #ext:hover{  transition: all 1.2s;  cursor: pointer;}
+   #content #ext:hover{-webkit-transform: scale(1.5); transform: scale(1.2);}
+
+/*formatando butões*/
+button{background-color: transparent; border-radius: 200px; border-color: #6AC1CF; border-width: 5px;}
+button:hover{ border-color: #23CFBE;}
+
+#Sobre #button2{ padding: 10px; transform: scaleX(-1); display: none; justify-content: center; align-content: center; justify-items: center; align-items: center;}
+#Sobre #button2:hover{ transition: all 1.5s; cursor: pointer; -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg);}
+#Sobre #button1{justify-content: center; align-content: center; justify-items: center; align-items: center; }
+   
+#button2:hover{ -webkit-transform: scale(1.5); transform: scale(1.2); }
+#content .setinha{width: 150px; max-height: 200px;;}
+#Sobre .setinha{padding: 5px; margin-left:15px;}
+.setinha{  transition: all 1.2s;  cursor: pointer;}
+.setinha:hover{-webkit-transform: scale(1.5); transform: scale(1.2);}
+.setinha{  transition: all 1.2s;  cursor: pointer;}
+.setinha:hover{-webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));}
+.setinha:hover{ -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg);
+}
+
+
+
+/*formatando divisória*/
+body #divisória{
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  display: block;
+}
+
+
+/*formatando biblioteca*/
+#Biblio{width: 100%; margin-top: 10px;  background-color: #fff7a3; height: auto; }
+#Biblio{
+  display: grid; 
+  grid-template-columns: 0.5fr 1.5fr; 
+  grid-template-rows: 0.5fr 1.9fr; 
+  gap: 0px 0px; 
+  gap: 0px 0px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "banner banner "
+    "info section"
+    ". ."
+    ". ."; 
+}
+
+/*formatando banner*/
+#Biblio #banner{grid-area: banner;  text-align: center; color: white; background-color: black; color: #FFF7A3; 
+   background-size: 400% 400%;  border: 12px solid #FFF1BC;
+	animation: gradient 15s ease infinite; text-align: center; justify-content: center; align-items: center; display: flex;
+
+
+}
+  #banner h1{text-shadow: 2px 2px 2px #FFF1BC ; font-weight: 600; font-size: 6em; text-align: center;
+     text-transform: uppercase; font-family: 'Amatic SC'; letter-spacing: 3px; word-spacing: 2px;}
+
+
+/* formatando section*/
+#Articles{grid-area: section; background-color: white;
+ flex-wrap: wrap; margin: 0; }
+
+#Articles{ display: grid; grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.4fr 1fr 1fr; align-items: center; justify-items: center; border: 8px solid #FFF1BC;
+
+}
+#Articles{transition: all 1.2s;font-family: 'Amatic SC',  cursive;  } 
+#Articles:hover{ box-shadow: 0px 10px 13px -7px #000000, 0px 4px 6px 13px rgba(0,0,0,0.76);}
+
+/*formatando info*/
+#Biblio #info{grid-area: info; background-color: white; border: 8px solid #FFF1BC; -webkit-box-shadow: 3px 3px 5px 4px rgba(0,0,0,0.65); 
+  box-shadow: 3px 3px 5px 4px rgba(0,0,0,0.65); margin-right: 10px; }
+ /*formatando hover da info*/
+ #Biblio #info{  cursor: pointer;}
+ #Biblio #info:hover{ transition: 1s;  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 4px 6px 13px rgba(0,0,0,0.76); 
+   box-shadow: 0px 10px 13px -7px #000000, 0px 4px 6px 13px rgba(0,0,0,0.76);}
+#Biblio p{color: #000000; margin-bottom: 60px; }
+
+
+/*formatando wikis*/
+
+.wiki{ width: 100%;  white-space: initial; display: none ; }
+.wiki h1{ font-size:  4em;; font-weight: 600; color:#FFF7A3 ; background-color: black; border-radius: 8px;
+  text-shadow: 2px 2px 2px #FFF1BC ; ; text-align: center; margin-top: 30px; margin-bottom: 35px; }
+  .wiki h1:hover{background-color: #FFF7A3; color: black;}
+.wiki p{ -webkit-box-shadow: 2px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 9px 5px 7px 7px rgba(0,0,0,0); 
+  box-shadow: 5px 5px 5px 0px #000000, inset 3px 4px 15px 0px #000000, 9px 5px 7px 7px rgba(0,0,0,0);
+  border: 5px solid #FFF1BC; background-color: white; width: 80%; height: 100%; display: block; margin: 0 auto;
+   padding: 20px; font-size: 1.2em; text-align: justify;  font-weight: 500; }
+  .wiki p:hover{ background-color: #FFF7A3; color: black; border-color: black;}
+
+ 
+
+/*Formatando cards ' dinobox'*/
+.dinobox{ background-color: white; width: 280px; height: 320px; margin: 80px;
+-webkit-box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.65); box-shadow: 3px 3px 15px 5px #FFF7A3; scale: (2);}
+.dinobox{transition: all 1.2s;  cursor: pointer; }
+.dinobox:hover{-webkit-box-shadow: 3px 3px 15px 5px #FFF7A3; box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.65); }
+.dinobox h2{margin-left: 10px; margin-right: 10px; font-size: 1.8em; text-align: center; margin-top: 45px; font-weight: 700; font-family: 'Amatic SC',  cursive;}
+.dinobox h2:hover{ background-color: #FFF7A3; border-radius: 10px; transition-duration: 1s; font-size: 2.1em;}
+.dinobox img{ border: 10px #FFF1BC; border-style:double;}
+
+/*formatando box dos dino*/
+#braquiobox{ display: none;}
+
+/*formatando tabela*/
+.wiki table, th, td{
+  -webkit-box-shadow: inset 4px 4px 10px 4px #000000, 9px -27px 27px -2px rgba(0,0,0,0); 
+  box-shadow: inset 4px 4px 15px 0px #000000, 9px -27px 27px -2px rgba(0,0,0,0);
+  border: 5px solid #FFF1BC; border-collapse: collapse; width: 75%;  font-weight: 900; font-size: 1.3em;
+   margin: auto; padding: 6px; font-family: 'Amatic SC',  cursive; background-color: white; color:black ;
+}
+.wiki table td:hover{ background-color: #FFF7A3; color: black; border-color: black;}
+.wiki table th{ font-size: 1.8em;}
+.wiki table td{ text-align: center; padding-left: 6px; padding-right: 6px;}
+.wiki table th:hover{ background-color: #FFF7A3; color: black; border-color: black;}
+
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/*formatando aba de adoção*/
+#adoção{ width: 100%; margin: 0; height: 125vh;  background: linear-gradient(to bottom,#fff7a3, #019788, #000000);
+  background-size: 100%;
+ /* animation: gradient-animation 24s ease infinite; */}
+#adoção section {  width: 100%;}
+
+.adpsection{ display: flex;}
+
+/*formatando cards */
+.adoptioncard{margin-left: 200px; background: transparent; 
+  width: 360px; height:425px; border: rgba(243, 240, 240, 0.6) 10px; border-style:  outset;  -webkit-box-shadow: -1px 5px 15px -1px rgba(0,0,0,0.93); 
+  box-shadow: -1px 5px 15px -1px rgba(0,0,0,0.93); }
+
+/* h3 do card*/
+.adoptioncard h3{ font-family: 'Amatic SC',  cursive; color: white; font-size: 3em; font-weight
+  : 700;text-decoration-line: underline; text-shadow: #000000 4px 3px 5px; padding: 8px 10px; width: 100%;
+  text-align: center;margin-top: 10px; width: 80%; margin-left: 42px;}
+  .adoptioncard h3:hover{ background-color: rgba(36, 36, 36, 0.418); cursor: pointer; 
+     border-radius: 8px; text-shadow: #000000 0px 1px 6px; transition-property: all; transition-duration: 0.4s; transition-timing-function: ease-in-out; }
+
+     .adpseta{  transform: rotateZ(-90deg); margin-top: 30px; margin-left: 140px;}
+     .adpseta:hover{ transition-duration: 1s; transition-property: all; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); height: 60px;}     
+/* efeito de fade */
+#About{ margin-top: 50px; }
+#How{ margin-top: 300px; }
+#list{ margin-top: 600px; }
+ul.fade{ opacity: 0; }
+p.fade{ opacity: 0;}
+
+#list ul{ text-align: justify;  margin: auto; flex-direction: column;}
+#list li{ padding: 5px; font-family: 'Amatic SC',  cursive; color: white; list-style: none; letter-spacing: 2px; cursor:pointer; }
+#list li:hover{ color: black;}
+#list a{ text-decoration: none; color: inherit;}
+
+/* formatando texto da info*/
+.InfoText{
+  font-family: 'Amatic SC', cursive; color: white; font-size: 1.3em; text-align: justify; font-weight: 700; text-shadow: #000000 4px 2px 4px;
+  width: 80%; margin-left: 10%; margin-top: 50px;  opacity: 0; transition: opacity .2s ease-in-out;  padding: 5px 10px; opacity: 1;
+}
+.InfoText:hover{  background-color: #FAE29B; color: black; cursor: default;
+  border-radius: 8px; transition-property: all; transition-duration: 0.4s; transition-timing-function: ease-in-out; text-shadow: #000000 3px 2px 9px;}
+
+
+/* formatando o container da lista de dinossauros */
+#listcontainer{ width: 100%;  align-content: space-around; height: 100px; background-color:transparent;}
+#listcontainer ul{display: flex; padding: 6px 10px; text-align: center; justify-content: space-around; 
+}
+#listcontainer ul li{ padding: 5px 12px; border-radius: 14px;}
+#listcontainer li:hover{ transition-property: all; transition: ease-out; transition-duration: 0.8s; font-size: 2.8em; cursor: pointer;
+   background-color: white; color: black; -webkit-box-shadow: -1px 5px 15px -1px white; 
+  box-shadow: -1px 5px 15px -1px white; padding: 5px 12px; border-radius: 14px;}
+#listcontainer .continent{ display: flex; margin-top: 10px; font-weight: 800; font-size: 2.5em;font-family: 'Amatic SC',  cursive; list-style: none; color: white;}
+#dinolist{ height: 110vh; background-image: url(/imagens/background/pexels-cottonbro-studio-9665176.jpg); background-size: 250px;}
+
+
+/* formatando a tabela da lista de dinossauro dos continentes*/
+
+.listbox table{ background-color: transparent; margin-bottom: 10px; height: 600px; border: none; }
+.listbox, th, td{
+   background-color: transparent; border: white 1px solid;
+}
+.listbox th{ font-size: 1.8em; color: white;}
+.listbox td{ text-align: center; padding-left: 6px; padding-right: 6px; color: white;}
+.listbox td:hover{ background-color: white; color: black; border-color: black;margin-bottom: 10px;}
+.listbox th:hover{ background-color: white; color: black; border-color: black;}
+
+/* formatando toda a section listbox*/
+  .listbox{background-color:transparent; margin-top: 30px; width: 250px; height: 100%;   scale: (2); background: fixed;  -webkit-box-shadow: -1px 5px 15px -1px white; 
+    box-shadow: -1px 5px 15px -1px white;}
+  .listbox h2{margin-left: 10px; margin-right: 10px; font-size: 1.8em; text-align: center; margin-top: 45px; font-weight: 700; font-family: 'Amatic SC',  cursive;}
+ 
+  .listbox img{ border: 5px black; border-style:ridge;}
+  
+  /* formatando cada lista de cada continente*/
+#AN{ display:none;  width: 100%; flex-wrap: nowrap; justify-content: space-around;}
+
+#AS{ display: none; width: 100%; flex-wrap: nowrap; justify-content: space-around;}
+#AA{ display: none; width: 100%; flex-wrap: nowrap; justify-content: space-around;}
+#OC{ display: none; width: 100%; flex-wrap: nowrap; justify-content: space-around;}
+#AF{ display: none; flex-wrap: nowrap; justify-content: space-around;}
+#EU{ display: none; width: 100%; flex-wrap: nowrap; justify-content: space-around;}
+
+/*formatando o footer, contatos */
+#Contatos{ width: 100%; height: 30vh; background-image: url(/imagens/background/moon.jpg);    font-family: 'Amatic SC', cursive; 
+   background-size: 70%; background-position: center; background-position-x: center;   display: grid;  
+   grid-template-columns: 1fr 1fr 1.4fr 0.6fr; 
+   grid-template-rows: 0.3fr 1.7fr; 
+   gap: 0px 0px;
+   grid-template-areas: 
+     "social projeto  creditos footerlogo"
+     "social projeto  creditos footerlogo"; ;  color: white;}
+#Contatos h1{ color: white; font-weight: 600; font-size: 2.6em; text-align: center;}
+
+/* formatando a coluna de rede*/
+   #redes{ grid-area: social;  }
+   #redes img{ background-color: white; border-radius: 30px; margin-left: 5px; margin-bottom: 5px; display: inline-block; background-size: 5px;  border: white solid 3px; width: 50px;}
+   #redes p{ text-align: center; font-weight: 400; font-size: 1.5em;}
+   .redecontent p{ font-weight: 450; font-size: 1.5em; margin-top: 13px; margin-left: 10px;}
+   .redecontent{ display: flex; margin-top: 10px;}
+   #twitter img{ border-radius: 35px;}
+   #redes:hover{ background-color: #000000;}
+ 
+ 
+/* formatando a logo do footer*/
+   #footerlogo{ grid-area: footerlogo;}
+
+   /* FORMATANDO OS CRÉDITOS*/
+   #creditos{ grid-area: creditos;}
+   #creditos { text-align: center;}
+   #creditos p {font-weight: 450; font-size: 1.5em; margin-top: 13px; margin-left: 10px; line-height: 50px ; width: 50%; text-align: center; margin-left: 170px;}
+   #creditos p:hover { background-color: black; font-weight: 700; border-radius: 10px; padding: 5px 10px }
+   #creditos a:hover{ color: #FFF7A3; margin-top: 8px; font-weight: 700; }
+   #creditos a{ text-decoration: underline; color: inherit;}
+
+/* formatando a coluna sobre*/
+
+#projeto p{font-weight: 500; font-size: 1.5em; margin-top: 13px; margin-left: 10px; text-align: justify; letter-spacing: 1px; line-height: 50px; cursor: default; padding: 5px 10px;}
+#projeto p:hover{ background-color: black; font-weight: 700; border-radius: 10px; padding: 5px 10px;}
+#language{padding: 5px 10px; color: #FFF7A3; font-size: 0.7em; margin-top: 8px; font-weight: 700; word-spacing: 4px;}
+#language:hover{ background-color: #FFF7A3; color: black; padding: 5px 10px; border-radius: 10px;}
+#name{ color: #FFF7A3; font-weight: 700; word-spacing: 4px; letter-spacing: 2px;}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
